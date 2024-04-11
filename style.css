@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.container{
+    background-color: beige;
+}
+
+.container nav{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+    background-color: antiquewhite;
+    margin-bottom: 30px;
+}
+
+.container nav i{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.nav-card{
+    display: none;
+}
+.nav-card li{
+    list-style: none;
+    font-weight: bold;
+}
+.container nav button{
+    display: none;
+    width: 400px;
+}
+
+.container nav i:hover > .buy-card{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    background-color: floralwhite;
+}
+.container nav i:hover .buy-card > button:hover {
+    border: solid thin #494949;
+    transition: all .4s;
+}
+
+.container nav i:hover .buy-card > button{
+    display: block;
+    width: 200px;
+    padding: 1rem;
+    margin: 10px;
+    margin-top: 300px;
+    border: solid thin #e1e1e1;
+    color: black;
+    cursor: pointer;
+
+}
+.container nav i:hover .nav-card{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    border-bottom: solid thin #e1e1e1;
+}
