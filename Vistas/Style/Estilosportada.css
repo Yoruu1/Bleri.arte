@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.lineadearriba {
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar-cambios {
+  background-color: #fffae6;
+  padding: 10px 10px 10px 200px;
+}
+
+.navbar-cambios .navbar-brand,
+.navbar-cambios .navbar-text {
+  color: #a15c02;
+}
+
+.navbar-brand img {
+  height: 100px;
+  width: auto;
+  margin-left: 200px;
+}
+
+.search-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+
+.navbar-text img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10%;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  border-right: 1px solid black;
+  padding-right: 80px;
+  padding-left: 80px;
+}
