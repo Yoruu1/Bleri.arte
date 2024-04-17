@@ -26,5 +26,11 @@ Para nuestra evaluación 1 tenemos que cumplir con:
    -Catalogo
        -Cards con carrusel
        -Botones
+   -Sesion
+       -Formulario
+       -Boton
+   -Tu huerta online
+       -Text
+       -Imagenes con referencias a cuidados de plantas del internet
 -Cards botón desplegará un modal
 -Definir diseño
