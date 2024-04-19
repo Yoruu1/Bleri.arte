@@ -68,78 +68,99 @@
     </div>
   </nav>
   
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      margin: 0;
+  
+    <style>
+      /* Estilos para las imágenes */
+      .bolsa-img {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+      }
+  
+      .flor-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10%;
+        pointer-events: none; /* Evita que las flores interfieran con los eventos de clic */
+        height: auto;
+      }
+ 
+      <style>
+    /* Estilos para las imágenes */
+    .bolsa-container {
+      position: relative;
+      display: inline-block;
     }
 
-    .content {
-      flex-grow: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 20px;
-    }
-
-    .img-racimo-ramos {
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    .racimo-img {
-      max-width: 40%;
-      height: auto;
-      transition: transform 0.3s ease;
-    }
-
-    .entry-meta {
-      text-align: center;
-      margin-top: 20px;
-      color: #6c757d; 
-      font-size: 14px;
-    }
-
-    .entry-meta p {
-      margin: 0; 
-    }
-
-    .titulo1 {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 25px;
-    }
-
-    .parrafo1 {
-      text-align: center;
-      margin: 20px auto;
-      color: black;
-      font-size: 15px;
-      height: auto;
-      width: 80%;
+    .bolsa-img {
       max-width: 100%;
+      height: auto;
     }
 
+    .flor-img {
+      position: absolute;
+      top: 20%; /* Ajusta la posición de la flor dentro de la bolsa */
+      left: 20%; /* Ajusta la posición de la flor dentro de la bolsa */
+      max-width: 60%; /* Ajusta el tamaño de la flor dentro de la bolsa */
+      pointer-events: none; /* Evita que las flores interfieran con los eventos de clic */
+    }
   </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Crea tu Racimo</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Imágenes de bolsas -->
+        <h3>Selecciona una bolsa:</h3>
+        <button class="btn btn-primary" onclick="mostrarBolsa('bolsa1')">Bolsa 1</button>
+        <button class="btn btn-primary" onclick="mostrarBolsa('bolsa2')">Bolsa 2</button>
+        <!-- Coloca aquí más botones para más bolsas si es necesario -->
 
-  <div class="img-racimo-ramos">
-    <img src="../Images/Huertita2.webp" alt="huerta" class="racimo-img">
-  </div>
-  <div class="post-categoria1">
-    <h1 class="titulo1">
-      Creacion de tu propio racimo o macetero
-    </h1>
-    <div class="parrafo1">
-      <p> 
-        En el innovador concepto de nuestra Huertita a Domicilio en Santiago, Chile, te ofrecemos la emocionante oportunidad de convertirte en el arquitecto de tus propios racimos y maceteros, con una extensa paleta de flores exóticas y cautivadoras. Desde las perennes, que simbolizan la eternidad y la resistencia ante la adversidad del tiempo, hasta la esencia floral, cuya fragancia delicada y sutil evoca un mundo de sensaciones etéreas. Atrévete a explorar la belleza efímera, donde la fugacidad de la vida se manifiesta en cada pétalo que se despliega, y sumérgete en el silencio pétalo, donde la calma y la quietud se funden en una danza mágica de formas y colores. Incorporamos también la danza floral, cuyos movimientos gráciles y armoniosos nos invitan a conectarnos con la esencia misma de la naturaleza, así como la luz y sombra, que juega con los contrastes y las tonalidades para crear una sinfonía visual única. No podemos dejar de lado el alma violeta, que nos invita a explorar los rincones más profundos de nuestro ser, ni el blanco puro, símbolo de inocencia y pureza. Estas fascinantes flores, cada una con su propia historia y significado, te brindan la posibilidad de expresar tus emociones más íntimas y crear composiciones que reflejen tu estilo y personalidad únicos. Con nuestra guía experta y una amplia variedad de flores frescas y vibrantes, te invitamos a sumergirte en el fascinante mundo de la floricultura y descubrir la alegría de dar forma a tus propias creaciones florales, transformando tus sentimientos en obras de arte vivientes que llenarán de magia y belleza cualquier espacio.
-      </p>
+        <!-- Contenedor de la bolsa seleccionada -->
+        <div id="bolsa-container" class="mt-3"></div>
+      </div>
+      <div class="col-md-6">
+        <!-- Imágenes de flores -->
+        <h3>Selecciona las flores:</h3>
+        <!-- Botones para seleccionar las flores -->
+        <button class="btn btn-primary" onclick="seleccionarFlor('rosa')">Rosa</button>
+        <button class="btn btn-primary" onclick="seleccionarFlor('margarita')">Margarita</button>
+        <!-- Añade más botones para más flores si es necesario -->
+      </div>
     </div>
   </div>
+
+  <!-- Enlaces a Bootstrap JS y jQuery (necesario para Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
+  <script>
+    function mostrarBolsa(bolsa) {
+      // Vacía el contenedor de la bolsa
+      document.getElementById('bolsa-container').innerHTML = '';
+      // Crea la imagen de la bolsa seleccionada
+      const bolsaImg = document.createElement('img');
+      bolsaImg.src = '../images/armaturacimo/Bolsas/Bolsablanca.png'; // Ruta a la imagen de la bolsa blanca
+      bolsaImg.classList.add('bolsa-img');
+      document.getElementById('bolsa-container').appendChild(bolsaImg);
+    }
+
+    function seleccionarFlor(flor) {
+      // Crea la imagen de la flor seleccionada
+      const florImg = document.createElement('img');
+      florImg.src = '../images/armaturacimo/Flores/' + flor + '.png'; // Ruta a la imagen de la flor seleccionada
+      florImg.classList.add('flor-img');
+      document.getElementById('bolsa-container').appendChild(florImg);
+    }
+  </script>
+  </body>
+  </html>
+  
+
+
   <div class="container">            
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
