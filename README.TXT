@@ -34,3 +34,6 @@ Para nuestra evaluación 1 tenemos que cumplir con:
        -Imagenes con referencias a cuidados de plantas del internet
 -Cards botón desplegará un modal
 -Definir diseño
+
+
+como se declara en java resultado de expresiones con diferentes tipos de datos por ejmplo una suma, metodos en java par muestras de informacion, operadores en java, metodos de seleccion de elemnos, eventos, arrays orden,filtrar elementos en java, operadores, en java, variables en java, tipo de datos en js, array, jquery seleecion de elementos, funciones de elementos en jquery ocultar, funcion anonima, agregar evento, metodo de envio de solicitud http o servido objeto para enviar solicitudes
