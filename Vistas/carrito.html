@@ -7,11 +7,46 @@
   <script src="https://kit.fontawesome.com/2adc7481a9.js" crossorigin="anonymous"></script>
   <title>Carrito de Compras</title>
   <link rel="stylesheet" href="Style/Estilosportada.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .row {
+      background-color: white;
+    }
+
+    .text-align-right {
+      text-align: end;
+    }
+
+    .img {
+      margin-top: 20px;
+    }
+
+    body {
+      background: -webkit-linear-gradient(left, #c8fe3f, #81ff8c);
+    }
+
+    .container {
+      margin-top: 60px;
+    }
+
+    .cart-product {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .btn-remove {
+      background-color: #dc3545;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
 </head>
+
 <body>
-  <script src="https://kit.fontawesome.com/2adc7481a9.js" crossorigin="anonymous"></script>
+  <p class="lineadearriba" style="background-color: #8fd89a;">Ten un lindo día, lo mereces 😉</p>
   <nav class="navbar navbar-expand-lg navbar-cambios">
     <div class="container-fluid">
       <a class="navbar-brand" href="Index.html"><img src="../images/Logo.png" alt="s:p digital"></a>
@@ -37,129 +72,25 @@
     </div>
   </nav>
 
-
-
-    <style>
-      .row {
-        background-color:white;
-        }
-        .text-align-right{
-          text-align: end;
-        }
-        .img{
-          margin-top: 20px
-        }
-        body{
-          background: -webkit-linear-gradient(left, #c8fe3f, #81ff8c);
-        }
-        .container{
-          margin-top: 60px;
-        }
-
-    </style>
-
-
-    <div class="container">
-      <div class="row align-items-start">
-        <div class="col">
-          <h2>Resumen de compra </h2>
-          <br>
-          <h5>Producto: Pink Princess</h5>
-          <br>
-          <h6>Cantidad: -2-</h6>
-          <br>
-          <h6>Valor: 35.000 Pesos</h6>
-          <br>
-          <p>El Philodendron Pink Princess prefiere que el suelo se mantenga ligeramente húmedo. Son muy expresivas,
-            así que notarás que en cuanto le falta agua se pone lacia.</p>
-          <i class="fa-regular fa-circle-xmark" style="cursor: pointer;"> Cancelar compra</i>
-          <script src="carrito.js">mostrarCarritoEnOtraVista();
-          </script>
-        </div>
-        
-    <div class="col">
-      
-          <img class="img d-block mx-auto" src="../Images/Catalogo/Flores/Flores1.webp" alt=""
-            style="max-height: 280px; object-fit: cover;cursor: pointer; ">
-
-        </div>
-        <hr style="color: black;" />
-
-      </div>
-      <div class="row align-items-start">
-        <div class="col">
-          <h2>Resumen de compra </h2>
-          <br>
-          <h5>Producto: Philodendro</h5>
-          <br>
-          <h6>Cantidad: -2-</h6>
-          <br>
-          <h6>Valor: 25.000 Pesos</h6>
-          <br>
-          <p>>La Monstera deliciosa, también conocida como
-            "Philodendro", "Costilla de adán" es una especie de planta tropical que ha conquistado los corazones de los
-            amantes de la naturaleza y la decoración interior. Sus hojas grandes y exuberantes, con su distintivo patrón
-            de agujeros y cortes, le confieren un aspecto elegante y sofisticado.</p>
-          <i class="fa-regular fa-circle-xmark" style="cursor: pointer;"> Cancelar compra</i>
-        </div>
-
-        <div class="col">
-          <img class="img d-block mx-auto" src="../Images/Catalogo/Flores/Flores2.webp" alt=""
-            style="max-height: 280px; object-fit: cover; cursor: pointer;">
-        </div>
-        <hr style="color: black;" />
-
-      </div>
-      
-      <div class="row align-items-start">
-        <div class="col">
-          <script src="pago.js" >cargarCarritoDesdeLocalStorage();
-          </script>
-          <h2>Resumen de compra </h2>
-          <br>
-          <h5>Producto: Sansevieria</h5>
-          <br>
-          <h6>Cantidad: -1-</h6>
-          <br>
-          <h6>Valor: 15.000 Pesos</h6>
-          <br>
-          <p>Philodendro", "Costilla de adán" es una especie de planta tropical que ha conquistado los corazones de los
-            amantes de la naturaleza y la decoración interior. Sus hojas grandes y exuberantes, con su distintivo patrón
-            de agujeros y cortes, le confieren un aspecto elegante y sofisticado.
-          </p>
-          <i class="fa-regular fa-circle-xmark" style="cursor: pointer;"> Cancelar Compra</i>
-        </div>
-        <div class="col">
-          <img class="img d-block mx-auto" src="../Images/Catalogo/Flores/Flores3.webp" alt=""
-            style="max-height: 280px; object-fit: cover; cursor: pointer;">
-        </div>
-        <hr style="color: black;" />
-
-      </div>
-        <div class="row">
-          <div class="col-6">
-            <h3>subtotal: $$$</h3>
-            <br>
-            <h3>iva: $$$</h3>
-          </div>
-          <div class="col-6" style="text-align: right;">
-            <h2>TOTAL: $95.000</h2>
-            <br>
-            
-           <a href="../Vistas/mediopago.html"> <input  type="button" class="btn btn-secondary btn-lg" value="Pagar"></a>
-            <br> <!-- Agregado para ajustar el espacio -->
-            
-          </div>
-        </div>
-      
-
+  <div class="container mt-4">
+    <h2>Carrito de Compras</h2>
+    <div id="cart-products-container">
+      <!-- Productos del carrito se mostrarán aquí -->
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-  </body>
-
+    <div class="row">
+      <div class="col-6">
+        <h3>Subtotal: <span id="subtotal">0</span> Pesos</h3>
+        <br>
+        <h3>IVA: <span id="iva">0</span> Pesos</h3>
+      </div>
+      <div class="col-6 text-align-right">
+        <h2>TOTAL: <span id="total">0</span> Pesos</h2>
+        <br>
+        <a href="mediopago.html"><button class="btn btn-secondary btn-lg">Pagar</button></a>
+        <br>
+      </div>
+    </div>
+  </div>
 
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -182,11 +113,70 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <script src="carrito.js">mostrarCarritoEnOtraVista();
-    </script>
-    <script src="pago.js" >cargarCarritoDesdeLocalStorage();
-    </script>
+  <script src="carrito.js"></script>
+  <script>
+    // Cargar el carrito del almacenamiento local al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+      const carritoGuardado = localStorage.getItem('carrito');
+      if (carritoGuardado) {
+        carrito = JSON.parse(carritoGuardado);
+        actualizarCarritoVista();
+      }
+    });
 
+    function actualizarCarritoVista() {
+      const contenedorProductosCarrito = document.getElementById('cart-products-container');
+      contenedorProductosCarrito.innerHTML = '';
+
+      let subtotal = 0;
+
+      carrito.forEach((producto, indice) => {
+        const productoCarrito = document.createElement('div');
+        productoCarrito.classList.add('cart-product');
+        productoCarrito.innerHTML = `
+          <div class="row">
+            <div class="col-8">
+              <h5>${producto.titulo}</h5>
+              <p>${producto.descripcion}</p>
+              <p>Cantidad: ${producto.cantidad}</p>
+              <p>Precio: ${producto.precio} Pesos</p>
+              <p>Total: ${producto.precio * producto.cantidad} Pesos</p>
+              <button class="btn-remove" onclick="eliminarDelCarrito(${indice})">Eliminar</button>
+            </div>
+            <div class="col-4">
+              <img src="${producto.imagen}" alt="${producto.titulo}" class="img-fluid">
+            </div>
+          </div>
+        `;
+        contenedorProductosCarrito.appendChild(productoCarrito);
+
+        subtotal += producto.precio * producto.cantidad;
+      });
+
+      const iva = subtotal * 0.19; // Asumimos que el IVA es del 19%
+      const total = subtotal + iva;
+
+      document.getElementById('subtotal').innerText = subtotal;
+      document.getElementById('iva').innerText = iva.toFixed(2);
+      document.getElementById('total').innerText = total.toFixed(2);
+    }
+
+    function eliminarDelCarrito(indice) {
+      carrito.splice(indice, 1);
+      actualizarCarrito();
+      guardarCarritoEnLocalStorage();
+      actualizarCarritoVista();
+    }
+
+    function actualizarCarrito() {
+      const totalProductos = carrito.reduce((total, producto) => total + producto.cantidad, 0);
+      document.getElementById('cart-count').innerText = totalProductos;
+    }
+
+    function guardarCarritoEnLocalStorage() {
+      localStorage.setItem('carrito', JSON.stringify(carrito));
+    }
+  </script>
 </body>
 
 </html>
