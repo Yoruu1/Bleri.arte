@@ -34,3 +34,31 @@ Para nuestra evaluación 1 tenemos que cumplir con:
        -Imagenes con referencias a cuidados de plantas del internet
 -Cards botón desplegará un modal
 -Definir diseño
+
+
+
+evaluación 2
+-Mejorar vistas
+    -Tu huerta online(blog) *Mati
+    -Crea tu propio racimo *Juampi
+    -Quienes somos *Mati
+-Añadir transbank *Axel
+    *El transbank debe ser agregado al momento de ir a pagar, eliminar el modal y reedireccionar a la api de transbank
+-funciones de java *PRIMERA PRIORIDAD*
+    -Funciones de post blog *Mati
+    -Funciones de agregar al carrito *Axel
+    -Funciones de crear racimo *Juampi
+-Añadir api de maps *Juampi
+-Añadir api del tiempo *Juampi
+-Utilizar JQuery para validacion de formularios
+    -Informacion de contacto *Juampi
+    -Iniciar sesion *Mati
+    -Medio pago *Axel
+
+
+
+
+
+
+
+como se declara en java resultado de expresiones con diferentes tipos de datos por ejmplo una suma, metodos en java par muestras de informacion, operadores en java, metodos de seleccion de elemnos, eventos, arrays orden,filtrar elementos en java, operadores, en java, variables en java, tipo de datos en js, array, jquery seleecion de elementos, funciones de elementos en jquery ocultar, funcion anonima, agregar evento, metodo de envio de solicitud http o servido objeto para enviar solicitudes

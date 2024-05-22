@@ -142,4 +142,10 @@ body {
 
 .btn_style:hover {
   background-color: #8a4d02;
+
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.nav-item:last-child {
+  border-right: none;
 }

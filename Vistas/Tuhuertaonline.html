@@ -27,7 +27,7 @@
       </div>
       <div class="ms-auto">
         <a href="Sesion.html" class="navbar-text" style="display: flex; align-items: center;">
-          <span >Iniciar sesión/Crear usuario</span>
+          <span>Iniciar sesión/Crear usuario</span>
           <img src="../Images/Usuario.png" alt="Sesion">
         </a>
       </div>
@@ -37,7 +37,7 @@
           <img src="../Images/Bolsa.png" alt="Carrito">
         </a>
       </div>
-             
+
   </nav>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -58,7 +58,10 @@
             <a class="nav-link" href="Informaciondecontacto.html" style="color: #a15c02;">Informacion de contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Clientesfelices.html" style="color: #a15c02;">Creacion de tu propio racimo 🪴</a>
+            <a class="nav-link" href="CreacionRacimo.html" style="color: #a15c02;">Creacion de tu propio racimo 💐</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Dondeestamos.html" style="color: #a15c02;">Donde estamos 🗺</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Tuhuertaonline.html" style="color: #a15c02;">Tu huerta online 🌵🌻🌹</a>
@@ -68,136 +71,174 @@
     </div>
   </nav>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      margin: 0;
+    *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box
     }
-
-    .content {
-      flex-grow: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 20px;
+ 
+    body{
+     font-family:sans-serif;
     }
-
-    .img-recibo-ramos {
-      text-align: center;
-      margin-top: 50px;
+ 
+    .post-line{
+     display: flex;
+     min-height: 100vh;
+     align-items: center;
+     padding: 30px 15px;
     }
-
-    .blog-img {
-      max-width: 100%;
-      height: auto;
-      transition: transform 0.3s ease;
+ 
+    .content{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 20px;
+     max-width: 1000px;
+     margin: auto;
     }
-
-    .entry-meta {
-      text-align: center;
-      margin-top: 20px;
-      color: #6c757d; 
-      font-size: 14px;
+    
+    .post-img-1{
+     background: url('../Images/Huertita2.webp');
+     width: 100%;
+     height: 200px;
+     background-size: cover;
+     background-position: center;
+     transition: .2s;
     }
-
-    .entry-meta p {
-      margin: 0; 
+ 
+    .post-img-2{
+     background: url('../Images/Carrusel/Maceteros.webp');
+     width: 100%;
+     height: 200px;
+     background-size: cover;
+     background-position: center;
+     transition: .2s;
     }
-
-    .titulo1 {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 25px;
+ 
+    .post-img-3{
+     background: url('../Images/Carrusel/Tierradehojas.webp');
+     width: 100%;
+     height: 200px;
+     background-size: cover;
+     background-position: center;
+     transition: .2s;
     }
-
-    .parrafo1 {
-      text-align: center;
-      margin: 20px auto;
-      color: black;
-      font-size: 15px;
-      height: auto;
-      width: 80%;
-      max-width: 100%;
+ 
+    .post{
+     box-shadow: 0 1px 6px 1px rgba(0,  0,  0, .1);
+     overflow: hidden;
+     transition: .2s;
     }
-
-    .titulo2 {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 25px;
+ 
+    .post:hover{
+     transform: translateY(-4px);
+     box-shadow: 0 1px 14px 2px rgba(0,  0,  0, .15);
     }
-
-    .parrafo2 {
-      text-align: center;
-      margin: 20px auto;
-      color: black;
-      font-size: 15px;
-      height: auto;
-      width: 80%;
-      max-width: 100%;
+ 
+    .post-header{
+     width: 100%;
+     height: 200px;
+     overflow: hidden;
+     cursor: pointer;
     }
-
-    .titulo3 {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 25px;
+ 
+    .post:hover .post-img-1,
+    .post:hover .post-img-2,
+    .post:hover .post-img-3{
+     transform: scale(1.1);
     }
-
-    .parrafo3 {
-      text-align: center;
-      margin: 20px auto;
-      color: black;
-      font-size: 15px;
-      height: auto;
-      width: 80%;
-      max-width: 100%;
+ 
+    .post-body{
+     padding: 15px;
+     text-align: center;
     }
+ 
+    .post-body span{
+     display: inline-block;
+     color: #999;
+     margin-bottom: 10px;
+    }
+ 
+    .post-body h2{
+     margin-bottom: 15px;
+    }
+    
+    .post-body p{
+     line-height: 1.5;
+     margin-bottom: 20px;
+    }
+ 
+    .post-body .post-link{
+     display: block;
+     text-decoration: none;
+     padding: 10px;
+     background: #2b6ebb;
+     color: #fff;
+     width: 50%;
+     margin: auto;
+     border-radius: 20px;
+     box-shadow: 1px 2px 6px 3px rgba(0,  0,  0, .1);
+     transition: .2s;
+    }
+ 
+    .post-body .post-link:hover{
+     background: #3378c7;
+     box-shadow: 1px 2px 6px 3px rgba(0,  0,  0, .2);
+     transform: translateY(-2px);
+    }
+ 
+    @media (max-width: 840px){
+     .content{
+       grid-template-columns: repeat(2, 1fr);
+     }
+    }
+    @media (max-width: 640px){
+     .content{
+       grid-template-columns: repeat(1, 1fr);
+     }
+    }
+ 
+   </style>
+ <section class="post-line">
+   <div class="content">
+     <article class="post">
+       <div class="post-header">
+         <div class="post-img-1"></div>
+       </div>
+       <div class="post-body">
+         <span>| 5 de Mayo, 2024 |</span>
+         <h2>Post más reciente</h2>
+         <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem non iure, necessitatibus recusandae dolor.</p>
+         <a href="#!" class="post-link">Leer Más...</a>
+       </div>
+     </article>
+     <article class="post">
+       <div class="post-header">
+         <div class="post-img-2"></div>
+       </div>
+       <div class="post-body">
+         <span>| 3 de Mayo, 2024 |</span>
+         <h2>Post más reciente</h2>
+         <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum necessitatibus animi assumenda magni quas fugit nam doloremque! Minus sunt minima, illo commodi fuga hic quasi.</p>
+         <a href="#!" class="post-link">Leer Más...</a>
+       </div>
+     </article>
+     <article class="post">
+       <div class="post-header">
+         <div class="post-img-3"></div>
+       </div>
+       <div class="post-body">
+         <span>| 22 de Abril, 2024 |</span>
+         <h2>Post más reciente</h2>
+         <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, libero fugiat nesciunt id accusantium perspiciatis itaque fugit quam nemo vel.</p>
+         <a href="#!" class="post-link">Leer Más...</a>
+       </div>
+     </article>
+   </div>
+ </section>
+ 
+   <script src="blog.js"></script>
 
-  </style>
-
-  <div class="img-recibo-ramos">
-    <img src="../Images/Recibo de ramos.jpg" alt="huerta" class="blog-img">
-  </div>
-  <div class="post-categoria1">
-    <h1 class="titulo1">
-      Envio de flores en Santiago, Chile
-    </h1>
-    <div class="parrafo1">
-      <p>
-        Bienvenidos a nuestro artículo sobre nuestro proyecto de huertita a domicio en Santiago, Chile. Si estas buscando enviar un mensaje sincero o sorprender a alguien especial, dandole amor y pasion entregandole un ramo de flores, has llegado al lugar indicado. Acá puedes enviar un ramo personalizado a tu gusto. Tambien puedes participar en tu creacion de tu ramo o en tu macetero, plantando todo tipo de nuestras plantas y flores.
-      </p>
-    </div>
-    <h1 class="titulo2">
-      Visión general de los servicios de envío de flores en Santiago
-    </h1>
-    <div class="parrafo2">
-      <p>
-        Cuando estés buscando servicios de envío de flores en Santiago, es importante tener en cuenta la calidad y confiabilidad de la floristería. Desde ramos románticos hasta arreglos vibrantes, los floristas de Santiago ofrecen una amplia variedad de opciones para cualquier ocasión. Investigando y leyendo opiniones de clientes, puedes asegurarte de que tu regalo llegue fresco y a tiempo. No solo las floristerías locales ofrecen una selección diversa de arreglos florales, como ramos, centros de mesa y cestas de regalo, sino que en nuestra Huertita podras hacer tus propios arreglos con los colores de las flores que le gustan a tu persona especial.
-      </p>
-    <h1 class="titulo3">
-      Conclusión
-    </h1> 
-    <div class="parrafo3">
-      <p>
-        En resumen, al explorar el artículo sobre el proyecto de huertita a domicilio en Santiago, Chile, se destaca la versatilidad y la pasión detrás de los servicios de envío de flores. Ofreciendo la oportunidad de enviar mensajes sinceros y sorpresas a personas especiales, este proyecto proporciona una amplia gama de opciones personalizadas y la posibilidad de participar en la creación de arreglos florales únicos. Al considerar los servicios de envío de flores en Santiago, es crucial tener en cuenta la calidad y la reputación de las floristerías locales, investigando y revisando las opiniones de los clientes para garantizar entregas frescas y puntuales. Además, la opción de crear arreglos florales personalizados resalta la atención a los detalles y la conexión emocional que se puede lograr a través de este gesto significativo.
-      </p>
-  </div>
-  <div class="entry-meta">
-    <ul class="entry-list">
-      <li class="by-autor">
-        Posted by
-      </li>
-      <a href="Clientesfelices.html">
-        <span class="autor-name">
-          <span class="fn">editor</span>
-        </span>
-      </a>
-    </ul>
-  </div>
-
-  <div class="container">            
+   <div class="container">            
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
         <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
