@@ -1,3 +1,10 @@
+PARA EJECUTAR
+IR A Bleri.arte.code-workspace Y DAR EN OPENWORSPACE LUEGO DE ESO NAVEGAR TRANQUILAMENTE
+
+
+
+
+
 CASO
 Los vecinos de una comunidad comenzaron a realizar la venta de productos para jardinería como maceteros, 
 tierra de hojas, flores y arbustos, todo esto para ayudar a una fundación sin fines de lucro, todo partió a través 
