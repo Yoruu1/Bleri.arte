@@ -110,13 +110,17 @@
               <img src="../Images/Usuario.png" alt="Sesion">
             </a>
           </div>
-          <div style="margin-right: 90px; color:#a15c02;">
+          <div class="container-icon" style="margin-right: 90px; color:#a15c02; position: relative;">
+
+  
             <a href="carrito.html" class="navbar-text" style="display: flex; align-items: center;">
-              <span style="margin-right: 10px;">Carrito</span>
-              <img src="../Images/Bolsa.png" alt="Carrito">
-              <span id="cart-count">0</span>
+              <span id="cart-count" style="margin-right: 10px; color: rgb(239, 147, 147);">0</span>
+            <img src="../Images/Bolsa.png" alt="Carrito">
             </a>
+            
+          <div class="container-cart-products hidden-cart">
           </div>
+        </div>
         </div>
       </nav>
 
@@ -195,7 +199,6 @@
     </footer>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function () {
       let flowers = [];
@@ -336,6 +339,9 @@
       });
     });
   </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="pago.js"></script>
 </body>
 
 </html>
