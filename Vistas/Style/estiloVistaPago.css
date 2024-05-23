@@ -1,0 +1,10 @@
+.row{
+    background-color: #fffae6;
+    margin: 5px;
+    padding: 5px
+}
+.container{
+    margin-top: 60px;
+    width: 50%;
+    border: 3px solid black;
+}
