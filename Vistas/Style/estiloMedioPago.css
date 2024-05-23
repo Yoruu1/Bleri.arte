@@ -1,0 +1,22 @@
+
+    .container{
+        background-color: #fffae6;
+        margin-top: 60px;
+    }
+    header{
+        background-color: #8fd89a;
+    }
+    body{
+        background-color: #cdffbe;
+    }
+
+    button {
+        background-color: bisque; 
+        border: none; 
+        padding: 15px 32px; 
+        margin: 5px;
+    }
+    .btn-primary {
+        padding: 15px 32px;
+        margin: 5px;
+    }

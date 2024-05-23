@@ -1,0 +1,38 @@
+    /*cambia el fondo de los productos junto a su informacion*/
+    .row {
+      background-color: rgb(242, 217, 159);
+    }
+
+    /*Coloca el texto "Total" al extremo derecho*/
+    .text-align-right {
+      text-align: end;
+    }
+
+    .img {
+      margin-top: 20px;
+    }
+
+    .container {
+      margin-top: 60px;
+    }
+
+    /*Cambia las caracteristicas del boton del carrito de compras*/
+    .btn-remove {
+    background-color:#cb832a;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    border-radius: 1px;
+    margin-top: 0.5rem;
+  }
+ 
+    /* Estilo para los productos dentro del carrito */
+    .cart-product {
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    color: #333;
+    background: rgb(245, 224, 183);
+  }

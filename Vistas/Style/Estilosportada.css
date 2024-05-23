@@ -3,7 +3,7 @@ body {
   height: 100%;
   margin: 0;
 }
-
+/*Es la primera fila de todas las paginas*/
 .lineadearriba {
   text-align: center;
   margin: 0;
@@ -11,28 +11,32 @@ body {
   padding: 0;
 }
 
+/*Esto es el body de todas las paginas, cada cambio afectara a la estructura*/
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/*Esto cambia el fondo de navbar*/
 .navbar-cambios {
   background-color: #fffae6;
-  padding: 10px 10px 10px 200px;
 }
 
+/*Cambia el color del texto navbar INCIAR SESION*/
 .navbar-cambios .navbar-brand,
 .navbar-cambios .navbar-text {
-  color: #a15c02;
+  color: #684a21;
 }
 
+/*Cambia el logo de navbar */
 .navbar-brand img {
   height: 100px;
   width: auto;
   margin-left: 200px;
 }
 
+/*Esto cambia el buscador de navbar*/
 .search-container {
   position: absolute;
   left: 50%;
@@ -40,12 +44,14 @@ body {
   width: 50%;
 }
 
+/*Cambia la imagen de perfil del navbar*/
 .navbar-text img {
   height: 30px;
   width: 30px;
   margin-right: 10%;
 }
 
+/*No se que cambia*/
 .navbar-nav {
   display: flex;
   justify-content: center;
@@ -54,37 +60,30 @@ body {
   padding: 0;
 }
 
+/*Configura el cambio de los items de abajo del buscador*/
 .nav-item {
   border-right: 1px solid black;
-  padding-right: 80px;
+  padding-right: 50px;
   padding-left: 80px;
+  pad
 }
 
+/*No se que cambia*/
 .nav-item:last-child {
   border-right: none;
 }
-
-
 
 
 .hidden-cart {
   display: none;
 }
 
-/* Estilo para los productos dentro del carrito */
-.cart-product {
-  align-items: center;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 1rem;
-  color: #333;
-  background: rgb(245, 224, 183);
-}
+
 
 .cart-product img {
-  width: 50px;
-  height: 50px;
-  margin-right: 1rem;
+  margin-top: 15px;
+  width: 160px;
+  height: 190px;
 }
 
 .cart-product h6 {
@@ -100,29 +99,13 @@ body {
   
 }
 
-.btn-remove {
-  background-color:#a97a40;
-  color: white;
-  border: none;
-  padding: 0.3rem 0.6rem;
-  cursor: pointer;
-  border-radius: 1px;
-  margin-top: 0.5rem;
-}
-
+/*No se que cambia*/
 #cart-count {
-
   border-radius: 50%;
   font-size: 14px;
   position: absolute;
   top: 0;
   right: -10px;
-}
-
-/* Estilo para el botón del carrito */
-.container-icon a {
-  display: flex;
-  align-items: center;
 }
 
 .container-icon img {

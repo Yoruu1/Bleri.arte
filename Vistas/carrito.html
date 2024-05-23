@@ -7,46 +7,16 @@
   <script src="https://kit.fontawesome.com/2adc7481a9.js" crossorigin="anonymous"></script>
   <title>Carrito de Compras</title>
   <link rel="stylesheet" href="Style/Estilosportada.css">
+  <link rel="stylesheet" href="Style/estiloCarrito.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
-    .row {
-      background-color: white;
-    }
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    .text-align-right {
-      text-align: end;
-    }
-
-    .img {
-      margin-top: 20px;
-    }
-
-    body {
-      background: -webkit-linear-gradient(left, #c8fe3f, #81ff8c);
-    }
-
-    .container {
-      margin-top: 60px;
-    }
-
-    .cart-product {
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
-    }
-
-    .btn-remove {
-      background-color: #dc3545;
-      color: #fff;
-      border: none;
-      padding: 5px 10px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-  </style>
 </head>
 
 <body>
   <p class="lineadearriba" style="background-color: #8fd89a;">Ten un lindo día, lo mereces 😉</p>
+  
+  <div id="navbar-container">
   <nav class="navbar navbar-expand-lg navbar-cambios">
     <div class="container-fluid">
       <a class="navbar-brand" href="Index.html"><img src="../images/Logo.png" alt="s:p digital"></a>
@@ -62,15 +32,20 @@
           <img src="../Images/Usuario.png" alt="Sesion">
         </a>
       </div>
-      <div style="margin-right: 90px; color:#a15c02;">
+
+      <div class="container-icon" style="margin-right: 90px; color:#a15c02; position: relative;">
+  
         <a href="carrito.html" class="navbar-text" style="display: flex; align-items: center;">
-          <span style="margin-right: 10px;">Carrito</span>
-          <img src="../Images/Bolsa.png" alt="Carrito">
-          <span id="cart-count">0</span>
+          <span id="cart-count" style="margin-right: 10px; color: rgb(239, 147, 147);">0</span>
+        <img src="../Images/Bolsa.png" alt="Carrito">
         </a>
+
+      <div class="container-cart-products hidden-cart">
       </div>
     </div>
   </nav>
+</div>
+
 
   <div class="container mt-4">
     <h2>Carrito de Compras</h2>
@@ -111,9 +86,16 @@
     </footer>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+      $("#navbar-container").load("navbar.html");
+    });
+  </script>
+    
 
-  <script src="carrito.js"></script>
+  <script src="pago.js" ></script>
+
+  
   <script>
     // Cargar el carrito del almacenamiento local al cargar la página
     document.addEventListener('DOMContentLoaded', () => {
@@ -180,3 +162,5 @@
 </body>
 
 </html>
+
+
