@@ -47,8 +47,6 @@
 
 <body>
   <p class="lineadearriba" style="background-color: #8fd89a;">Ten un lindo día, lo mereces 😉</p>
-  
-  <div id="navbar-container">
   <nav class="navbar navbar-expand-lg navbar-cambios">
     <div class="container-fluid">
       <a class="navbar-brand" href="Index.html"><img src="../images/Logo.png" alt="s:p digital"></a>
@@ -64,20 +62,15 @@
           <img src="../Images/Usuario.png" alt="Sesion">
         </a>
       </div>
-
-      <div class="container-icon" style="margin-right: 90px; color:#a15c02; position: relative;">
-  
+      <div style="margin-right: 90px; color:#a15c02;">
         <a href="carrito.html" class="navbar-text" style="display: flex; align-items: center;">
-          <span id="cart-count" style="margin-right: 10px; color: rgb(239, 147, 147);">0</span>
-        <img src="../Images/Bolsa.png" alt="Carrito">
+          <span style="margin-right: 10px;">Carrito</span>
+          <img src="../Images/Bolsa.png" alt="Carrito">
+          <span id="cart-count">0</span>
         </a>
-
-      <div class="container-cart-products hidden-cart">
       </div>
     </div>
   </nav>
-</div>
-
 
   <div class="container mt-4">
     <h2>Carrito de Compras</h2>
@@ -122,6 +115,7 @@
 
   <script src="carrito.js"></script>
   <script>
+    // Cargar el carrito del almacenamiento local al cargar la página
     document.addEventListener('DOMContentLoaded', () => {
       const carritoGuardado = localStorage.getItem('carrito');
       if (carritoGuardado) {
@@ -186,5 +180,3 @@
 </body>
 
 </html>
-
-

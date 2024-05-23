@@ -222,7 +222,7 @@
 
         $('.bag-display .flower').remove();
         flowers.forEach((flower, index) => {
-          let angle = 90 - (180 / (flowers.length + 1)) * (index + 1);
+          let angle = 40 - (90 / (flowers.length + 1)) * (index + 1);
           let flowerElement = $(`<img class="flower" src="../images/armaturacimo/Flores/${flower.name}.png" alt="${flower.name}">`);
           flowerElement.css('transform', `rotate(${angle}deg)`);
           $('.bag-display').append(flowerElement);

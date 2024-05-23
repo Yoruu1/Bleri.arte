@@ -6,88 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
   <link rel="stylesheet" href="Style/Estilosportada.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <style>
-      .hidden-cart {
-        display: none;
-      }
-    </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .hidden-cart {
+      display: none;
+    }
+  </style>
 </head>
-
-
 
 <body>
   <p class="lineadearriba" style="background-color: #8fd89a;">Ten un lindo día, lo mereces 😉</p>
-
-  <div id="navbar-container"> 
-
-  <nav class="navbar navbar-expand-lg navbar-cambios">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="Index.html"><img src="../images/Logo.png" alt="s:p digital"></a>
-      <div class="search-container">
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Busca los mejores productos para tu huerta :)"
-            aria-label="Buscar">
-          <button class="btn btn-outline-light" type="submit">🔍</button>
-        </form>
-      </div>
-      <div class="ms-auto">
-        <a href="Sesion.html" class="navbar-text" style="display: flex; align-items: center;">
-          <span>Iniciar sesión/Crear usuario</span>
-          <img src="../Images/Usuario.png" alt="Sesión">
-        </a>
-      </div>
-
-      <div class="container-icon" style="margin-right: 90px; color:#a15c02; position: relative;">
-        <a href= "carrito.html" class="navbar-text" style="display: flex; align-items: center;">
-          <span id="cart-count" style="margin-right: 10px; color: red;">0</span>
-          <img src="../Images/Bolsa.png" alt="Carrito">
-        </a>
-        <div class="container-cart-products hidden-cart">
-          
+  <div id="navbar-container">
+    <nav class="navbar navbar-expand-lg navbar-cambios">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html"><img src="../images/Logo.png" alt="s:p digital"></a>
+        <div class="search-container">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Busca los mejores productos para tu huerta :)" aria-label="Buscar">
+            <button class="btn btn-outline-light" type="submit">🔍</button>
+          </form>
+        </div>
+        <div class="ms-auto">
+          <a href="Sesion.html" class="navbar-text" style="display: flex; align-items: center;">
+            <span>Iniciar sesión/Crear usuario</span>
+            <img src="../Images/Usuario.png" alt="Sesión">
+          </a>
+        </div>
+        <div class="container-icon" style="margin-right: 90px; color:#a15c02; position: relative;">
+          <a href="carrito.html" class="navbar-text" style="display: flex; align-items: center;">
+            <span id="cart-count" style="margin-right: 10px; color: red;">0</span>
+            <img src="../Images/Bolsa.png" alt="Carrito">
+          </a>
+          <div class="container-cart-products hidden-cart"></div>
         </div>
       </div>
+    </nav>
 
-    </div>
-  </nav>
-  
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="Quienessomos.html" style="color: #a15c02;">Quienes somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Catalogo.html" style="color: #a15c02;">Catalogo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Informaciondecontacto.html" style="color: #a15c02;">Informacion de contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="CreacionRacimo.html" style="color: #a15c02;">Creacion de tu propio racimo 💐</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Dondeestamos.html" style="color: #a15c02;">Donde estamos 🗺</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Tuhuertaonline.html" style="color: #a15c02;">Tu huerta online 🌵🌻🌹</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="Quienessomos.html" style="color: #a15c02;">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Catalogo.html" style="color: #a15c02;">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Informaciondecontacto.html" style="color: #a15c02;">Información de contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CreacionRacimo.html" style="color: #a15c02;">Creación de tu propio racimo 💐</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Dondeestamos.html" style="color: #a15c02;">Dónde estamos 🗺</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Tuhuertaonline.html" style="color: #a15c02;">Tu huerta online 🌵🌻🌹</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</div>
-
-
+    </nav>
+  </div>
 
   <h1 style="text-align: center; margin-top: 5%; color: #a15c02;">Nuestro Catalogo</h1>
   
@@ -98,7 +82,7 @@
   <div style="margin: 0 5%;">
     
     <div class="card-group">
-
+  
        <!-- info producto -->
       <div class="card">
         <img src="../Images/Catalogo/Flores/flores1.webp" class="card-img-top" alt="...">
@@ -111,8 +95,8 @@
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
         
         </div>
-      </div>
-
+      </div>55
+  
       <!-- info producto -->
       <div class="card" >
         <img src="../Images/Catalogo/Flores/flores2.webp" class="card-img-top" alt="...">
@@ -124,10 +108,10 @@
           <p class="price">Valor: 4.000 Pesos
           </p>
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
-
+  
         </div>
       </div>
-
+  
        <!-- info producto -->
       <div class="card">
         <img src="../Images/Catalogo/Flores/flores3.webp" class="card-img-top" alt="...">
@@ -141,7 +125,7 @@
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
         </div>
       </div>
-
+  
        <!-- info producto -->
       <div class="card">
         <img src="../Images/Catalogo/Flores/flores4.webp" class="card-img-top" alt="...">
@@ -153,13 +137,13 @@
           <p class="price"> Valor: 8.000 Pesos
           </p>
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
-
+  
         </div>
       </div>
     </div>
-
+  
      <!-- info producto -->
-
+  
     <div class="card-group">
       <div class="card">
         <img src="../Images/Catalogo/Flores/flores5.webp" class="card-img-top" alt="...">
@@ -173,7 +157,7 @@
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
         </div>
       </div>
-
+  
      <!-- info producto -->
       <div class="card">
         <img src="../Images/Catalogo/Flores/flores6.webp" class="card-img-top" alt="...">
@@ -185,11 +169,11 @@
           <p class="price">Valor: 5.000 Pesos
           </p>
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
-
+  
         </div>
       </div>
       <!-- info producto -->
-
+  
       <div class="card">
         <img src="../Images/Catalogo/Flores/flores7.webp" class="card-img-top" alt="...">
         <div class="card-body">
@@ -200,10 +184,10 @@
           <p class="price">Valor: 9.000 Pesos
           </p>
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
-
+  
         </div>
       </div>
-
+  
        <!-- info producto -->
       <div class="card">
         <img src="../Images/Catalogo/Flores/flores8.webp" class="card-img-top" alt="...">
@@ -218,7 +202,7 @@
         </div>
       </div>
     </div>
-
+  
     <!-- info producto -->
     <div class="card-group">
       <div class="card">
@@ -234,7 +218,7 @@
             
         </div>
       </div>
-
+  
       <!-- info producto -->
       <div class="card">
         <img src="../Images/Catalogo/Maceteros/macetero2.webp" class="card-img-top" alt="...">
@@ -246,10 +230,10 @@
           <p class="price">Valor: 15.000 Pesos
           </p>
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
-
+  
         </div>
       </div>
-
+  
        <!-- info producto -->
       <div class="card">
         <img src="../Images/Catalogo/Maceteros/macetero3.webp" class="card-img-top" alt="...">
@@ -261,10 +245,10 @@
           <p class="price">Valor: 15.000 Pesos
           </p>
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
-
+  
         </div>
       </div>
-
+  
       <!-- info producto -->
       <div class="card">
         <img src="../Images/Catalogo/Maceteros/macetero4.webp" class="card-img-top" alt="...">
@@ -276,7 +260,7 @@
           <p class="price">Valor: 15.000 Pesos
           </p>
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
-
+  
         </div>
       </div>
     </div>
@@ -292,10 +276,10 @@
           <p class="price">Valor: 15.000 Pesos
           </p>
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
-
+  
         </div>
       </div>
-
+  
       <!-- info producto -->
       <div class="card">
         <img src="../Images/Catalogo/Maceteros/macetero6.webp" class="card-img-top" alt="...">
@@ -307,7 +291,7 @@
           <p class="price">Valor: 15.000 Pesos
           </p>
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
-
+  
         </div>
       </div>
       <!-- info producto -->
@@ -321,7 +305,7 @@
           <p class="price">Valor: 15.000 Pesos
           </p>
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
-
+  
         </div>
       </div>
        <!-- info producto -->
@@ -335,46 +319,31 @@
           <p class="price">Valor: 15.000 Pesos
           </p>
           <button class="btn_style add-to-cart-btn" >Agregar al carrito</button>
-
+  
         </div>
       </div>
     </div>
   </div> <!-- div de los margenes -->
-
-
-  
-  <div class="container">            
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <span class="mb-3 mb-md-0 text-muted">© 2024 HuertitaDUOCUC, Inc</span>
-      </div>
-  
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="https://twitter.com/i/flow/login" aria-label="Follow us on Twitter"><img src="../Images/redessociales/twitter.png" alt="Twitter" width="24" height="24"></a></li>
-        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/?hl=es" aria-label="Follow us on Instagram"><img src="../Images/redessociales/instagram.png" alt="Instagram" width="24" height="24"></a></li>
-        <li class="ms-3"><a class="text-muted" href="https://es-la.facebook.com/" aria-label="Follow us on Facebook"><img src="../Images/redessociales/facebook.png" alt="Facebook" width="24" height="24"></a></li>
-      </ul>
-    </footer>
-  </div>
   
 
+  <div class="container-cart-products hidden-cart"></div>
 
-  
-  <script>
-    $(document).ready(function(){
-      $("#navbar-container").load("navbar.html");
-    });
-  </script>
-    
-    <script src="pago.js" ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">© 2024 HuertitaDUOCUC, Inc</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="https://twitter.com/i/flow/login" aria-label="Follow us on Twitter"><img src="../Images/redessociales/twitter.png" alt="Twitter" width="24" height="24"></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/?hl=es" aria-label="Follow us on Instagram"><img src="../Images/redessociales/instagram.png" alt="Instagram" width="24" height="24"></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://es-la.facebook.com/" aria-label="Follow us on Facebook"><img src="../Images/redessociales/facebook.png" alt="Facebook" width="24" height="24"></a></li>
+    </ul>
+  </footer>
 
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="pago.js"></script>
 </body>
-
-
 
 </html>
